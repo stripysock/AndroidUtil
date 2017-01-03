@@ -13,9 +13,7 @@ public class Logger {
     private static final String DEFAULT_TAG = "StripySock";
 
     public static void d(String message) {
-        if (BuildConfig.DEBUG) {
-            Log.d(getTag(), message);
-        }
+        Log.d(getTag(), message);
     }
 
     public static void i(String message) {

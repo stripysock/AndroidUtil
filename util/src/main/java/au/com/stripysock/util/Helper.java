@@ -222,7 +222,7 @@ public class Helper {
                 .setMessage(message)
                 .setPositiveButton("OK", null);
 
-        if (stacktrace != null && BuildConfig.DEBUG) {
+        if (stacktrace != null) {
             builder.setNegativeButton("Show Detailed Report", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
