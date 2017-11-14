@@ -13,11 +13,11 @@ public class Logger {
     private static final String DEFAULT_TAG = "StripySock";
 
     public static void d(String message) {
-        Log.d(getTag(), message);
+        if (BuildConfig.DEBUG) Log.d(getTag(), message);
     }
 
     public static void i(String message) {
-        Log.i(getTag(), message);
+        if (BuildConfig.DEBUG) Log.i(getTag(), message);
     }
 
     public static void e(String message) {
